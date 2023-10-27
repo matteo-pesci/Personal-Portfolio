@@ -11,6 +11,12 @@ body {
     padding: 0;
     background-color: #bcbcbc;
     padding-top: 80px;
+    user-select: none;
+}
+
+h1 {
+    font-size: 24px;
+    color: #bcbcbc;
 }
 
 h2 {
@@ -208,8 +214,23 @@ form {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
+/* Adjustments to fix the sticky navbar overlapping with the sections when clicking links*/
 
-/* Media Queries for Mobile Responsiveness */
+#about {
+    scroll-margin-top: 85px; 
+  }
+
+
+#skills {
+    scroll-margin-top: 85px; 
+  }
+
+#projects {
+    scroll-margin-top: 85px; 
+  }
+
+  
+/* Media queries for mobile responsiveness */
 
 @media (min-width: 768px) {
     .nav-link {
