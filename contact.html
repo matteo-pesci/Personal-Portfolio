@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="description"
+      content="Matteo Pesci's portfolio website showcasing skills, projects, and contact information."
+    />
+    <title>My Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon-32x32.png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><h1>Matteo Pesci</h1></a>
+          <button
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            class="navbar-toggler"
+            data-bs-target="#navbarNav"
+            data-bs-toggle="collapse"
+            type="button"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact -->
+    <section
+      class="container py-5 bg-lightblue rounded-section outlined-section"
+      id="contact"
+    >
+      <h2>Contact Me</h2>
+      <div class="card narrow-form">
+        <div class="card-body">
+          <div class="d-flex justify-content-center">
+            <a
+              href="https://www.linkedin.com/in/matteo-pesci-76779a26a/"
+              target="_blank"
+              class="me-3"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/icons/linkedin.svg"
+                width="32"
+                height="32"
+                alt="LinkedIn Profile Link"
+              />
+            </a>
+            <a
+              href="https://github.com/matteo-pesci"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/icons/github.svg"
+                width="32"
+                height="32"
+                alt="GitHub Profile Link"
+              />
+            </a>
+          </div>
+          <form action="https://formspree.io/f/mjvdoqrj" method="POST">
+            <div class="mb-3">
+              <label class="form-label" for="name">Name</label>
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="email">Email</label>
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                type="email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label" for="message">Message</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Type your message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="submit-button-container">
+              <button class="btn btn-primary" type="submit">Submit</button>
+              <a class="btn btn-primary" href="index.html">Go Back</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
